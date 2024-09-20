@@ -233,3 +233,35 @@
   expected-result: |
     Пользователь переходит на страницу этого товара с подробным описанием
 
+   ---
+  - summary: |
+    Увеличение количества добавленного товара в корзине
+  requirement: |
+    В корзине нажатии 1 раз на + количество выбранного товара увеличивается на 1, при нажатии 1 раз на - количество выбранного товара уменьшается на 1
+  prerequisites: |
+    Открыта страница https://hexlet-products-store.vercel.app/cart
+    Добавлен 1 товар
+  test-data: |
+    https://hexlet-products-store.vercel.app/cart
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/cart
+    - нажимаем +
+  expected-result: |
+    Увеличивается количество добавленного товара в корзине на 1
+
+     ---
+  - summary: |
+    Умньшение количества добавленного товара в корзине
+  requirement: |
+    В корзине нажатии 1 раз на + количество выбранного товара увеличивается на 1, при нажатии 1 раз на - количество выбранного товара уменьшается на 1
+  prerequisites: |
+    Открыта страница https://hexlet-products-store.vercel.app/cart
+    Добавлен 1 товар
+  test-data: |
+    https://hexlet-products-store.vercel.app/cart
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/cart
+    - нажимаем -
+  expected-result: |
+    Уменьшается количество добавленного товара в корзине на 1
+
