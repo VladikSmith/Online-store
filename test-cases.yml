@@ -338,7 +338,7 @@
   expected-result: |
     Цена уменьшается на 1
 
-    ---
+  ---
   - summary: |
     Кнопка увеличения цены во втором инпуте с ценой
   requirement: |
@@ -368,7 +368,7 @@
   expected-result: |
     Цена уменьшается на 1
 
-    ---
+  ---
   - summary: |
     Корректное отображение брендов
   requirement: |
@@ -381,3 +381,18 @@
     - заходим на страницу https://hexlet-products-store.vercel.app/
   expected-result: |
     Должны корректно отображаться бренды с возможностью выбора
+
+  ---
+  - summary: |
+    Поиск по хештегу #
+  requirement: |
+    Если в товаре перейти по хештегу, то отображаются все товары с этим хештегом
+  prerequisites: |
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/
+    - нажимаем хештег
+  expected-result: |
+    Должны корректно отображаться товары с выбранным хештегом
