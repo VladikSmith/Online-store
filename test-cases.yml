@@ -1,4 +1,22 @@
   ---
+  - summary: |
+    Добавление товара в корзину
+  requirement: |
+    В магазине на товаре при нажатии на кнопку "В корзину" товар должен добавляться в корзину
+  prerequisites: |
+    Открыта страница https://hexlet-products-store.vercel.app/
+    Корзина пустая
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+    https://hexlet-products-store.vercel.app/cart
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/
+    - на товаре нажимаем кнопку "В корзину"
+    - заходим на страницу https://hexlet-products-store.vercel.app/cart
+  expected-result: |
+    Пользователь должен попасть на страницу с корзиной и увидеть добавленный товар
+  
+  ---
    - summary: |
     Отображение количества добавленных товаров возле кнопки "Корзина"
   requirement: |
