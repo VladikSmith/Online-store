@@ -127,3 +127,8 @@
 - summary: |
        Поиск по хештегу #
   status: fail
+
+---
+- summary: |
+       Переход в магазин через лого "Hexlet Store"
+  status: fail
