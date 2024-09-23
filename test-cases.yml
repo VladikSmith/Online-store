@@ -396,3 +396,18 @@
     - нажимаем хештег
   expected-result: |
     Должны корректно отображаться товары с выбранным хештегом
+
+  ---
+  - summary: |
+    Переход в магазин через лого "Hexlet Store"
+  requirement: |
+    После нажатия на лого "Hexlet Store" пользователь переходит в магазин
+  prerequisites: |
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/
+    - нажимаем лого "Hexlet Store"
+  expected-result: |
+    Пользователь должен перейти в магазин
