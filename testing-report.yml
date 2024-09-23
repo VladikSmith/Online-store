@@ -81,12 +81,12 @@
 ---
 - summary: |
      Переключение страницы с товарами на кнопку "Следующая"
-  status: fail
+  status: pass
 
 ---
 - summary: |
      Переключение страницы с товарами на кнопку "Предыдущая"
-  status: fail
+  status: pass
 
 ---
 - summary: |
