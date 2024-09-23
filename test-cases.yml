@@ -367,3 +367,17 @@
     - нажимаем на кнопку уменьшения цены 1 раз
   expected-result: |
     Цена уменьшается на 1
+
+    ---
+  - summary: |
+    Корректное отображение брендов
+  requirement: |
+    в Магазине должны корректно отображаться бренды с возможностью выбора
+  prerequisites: |
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/
+  expected-result: |
+    Должны корректно отображаться бренды с возможностью выбора
