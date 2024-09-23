@@ -61,11 +61,12 @@
     - 1 раз нажимаем на кнопку "Категория"
   expected-result: |
     Пользователь должен увидеть выпадающий список категорий товаров
+    
   ---
   - summary: |
     Выбор категории
   requirement: |
-    В магазине при нажатии 1 раз на кнопку "Категория" выпадает список с категориями товаров - beauty, fragrances, furniture, groceries. Выбирается категория и появляются товары этой категории
+    В магазине при нажатии 1 раз на кнопку "Категория" выпадает список с категориями товаров. Выбирается категория и появляются товары этой категории
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
@@ -79,69 +80,69 @@
 
   ---
   - summary: |
-    Выбор товаров по производителю Calvin Klein
+    Выбор товаров по производителю
   requirement: |
-    В магазине при нажатии 1 раз на кнопку "Calvin Klein" должны появиться только товары этого производителя, т.е. Calvin Klein CK One
+    В магазине при нажатии 1 раз на кнопку производителя. Должны появиться только товары этого производителя
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
   steps: |
     - заходим на страницу https://hexlet-products-store.vercel.app/
-    - 1 раз нажимаем на кнопку "Calvin Klein"
+    - 1 раз нажимаем на кнопку вы ранного производителя
   expected-result: |
-    Пользователь должен увидеть только 1 товар Calvin Klein CK One
+    Пользователь должен увидеть только товары этого производителя
 
   ---
   - summary: |
     Поиск товаров по ключевому слову
   requirement: |
-    В магазине в форме "Поиск" при вводе слова "Calvin" появляются товары только этого производителя, т.е. Calvin Klein CK One
+    В магазине в форме "Поиск" при вводе слова появляются только товары содержащие это слово
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
   steps: |
     - заходим на страницу https://hexlet-products-store.vercel.app/
-    - в поле "Поиск" пишем Calvin
+    - в поле "Поиск" пишем выбранное слово
   expected-result: |
-    Пользователь должен увидеть только 1 товар Calvin Klein CK One
+    Пользователь должен увидеть только товары содержащие это слово
 
   ---
   - summary: |
     Поиск товаров с определенной ценой (проверка первого инпута с ценой)
   requirement: |
-    В магазине в первом инпуте с ценой при вводе "500" отображаются товары с ценой 500 и выше
+    В магазине в первом инпуте с ценой при вводе определенной цены отображаются товары с этой ценой и выше
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
   steps: |
     - заходим на страницу https://hexlet-products-store.vercel.app/
-    - в поле с ценой в первом инпуте пишем "500"
+    - в поле с ценой в первом инпуте пишем определенную цену
   expected-result: |
-    Пользователь должен увидеть только товары с ценой 500 и выше
+    Пользователь должен увидеть только товары с этой ценой и выше
 
   ---
   - summary: |
     Поиск товаров с определенной ценой (проверка второго инпута с ценой)
   requirement: |
-    В магазине во втором инпуте с ценой при вводе "500" отображаются товары с ценой меньше 500
+    В магазине во втором инпуте с ценой при вводе определенной цены отображаются товары с этой ценой и ниже
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
   steps: |
     - заходим на страницу https://hexlet-products-store.vercel.app/
-    - в поле с ценой во втором инпуте пишем "500"
+    - в поле с ценой в первом инпуте пишем определенную цену
   expected-result: |
-    Пользователь должен увидеть только товары с ценой меньше 500
+    Пользователь должен увидеть только товары с этой ценой и ниже
 
   ---
   - summary: |
     Смена языка на сайте
   requirement: |
-    В магазине при нажатии на кнопку "Язык" выпадает окно с 2 языками на выбор - English, Russian
+    В магазине при нажатии на кнопку "Язык" выпадает окно с 2 языками на выбор- English, Russian
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
@@ -154,19 +155,34 @@
 
   ---
   - summary: |
+    Отображение флагов в списке языков
+  requirement: |
+    В магазине при нажатии на кнопку "Язык" выпадает окно с 2 языками на выбор - English, Russian. Возле каждого языка корректно отображаются флаги
+  prerequisites: |
+    Открыта страница https://hexlet-products-store.vercel.app/
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/
+    - нажимаем на кнопку "Язык"
+  expected-result: |
+    Пользователь должен увидеть выпадающее окно с 2 языками на выбор - English, Russian и 2 флагами возле них
+    
+  ---
+  - summary: |
     Удаление товара из корзины
   requirement: |
-    в Корзине при нажатии кнопки "Удалить" удаляется товар из корзины
+    в Корзине при нажатии кнопки "Удалить" удаляется выбранный товар из корзины
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/cart
-    Добавлен 1 товар
+    Добавлено 2 товара
   test-data: |
     https://hexlet-products-store.vercel.app/cart
   steps: |
     - заходим на страницу https://hexlet-products-store.vercel.app/cart
     - возле выбранного товара нажимаем на кнопку "Удалить"
   expected-result: |
-    Удаляется выбранный товар
+    Удаляется выбранный товар из корзины
 
   ---
   - summary: |
@@ -231,3 +247,64 @@
     - нажимаем на выбранный товар
   expected-result: |
     Пользователь переходит на страницу этого товара с подробным описанием
+
+  ---
+  - summary: |
+    Переключение страницы с товарами на кнопку "Следующая"
+  requirement: |
+    в Магазине при нажатии на кнопку "Следующая" пользователь переходит на следующую страницу с товарами
+  prerequisites: |
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/
+    - нажимаем на кнопку "Следующая"
+  expected-result: |
+    Пользователь переходит на страницу следующую страницу с товарами
+
+  ---
+  - summary: |
+    Переключение страницы с товарами на кнопку "Предыдущая"
+  requirement: |
+    в Магазине при нажатии на кнопку "Предыдущая" пользователь переходит на предыдущую страницу с товарами
+  prerequisites: |
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/
+    - нажимаем на кнопку "Следующая"
+  expected-result: |
+    Пользователь переходит на предыдущую страницу с товарами
+
+  ---
+  - summary: |
+    Кнопка "В наличии" активирована
+  requirement: |
+    в Магазине при нажатии на кнопку "В наличии" (она активируется) отображаются только товары в наличии
+  prerequisites: |
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/
+    - нажимаем на кнопку "В наличии"
+  expected-result: |
+    Пользователь видит только товары в наличии
+
+  ---
+  - summary: |
+    Кнопка "В наличии" дезактивирована
+  requirement: |
+    в Магазине при нажатии на кнопку "В наличии" (она дезактивируется) отображаются только товары, которых нет в наличии
+  prerequisites: |
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/
+    - нажимаем на кнопку "В наличии"
+  expected-result: |
+    Пользователь видит только товары, которых нет в наличии
+
