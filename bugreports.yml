@@ -113,3 +113,17 @@
     Должны отображаться все товары с выбранным хештегом
   actual-result: |
     Ничего не происходит
+
+---
+- summary: |
+    Переход в магазин через лого "Hexlet Store"
+  environment: |
+    Google Chrome Версия 129.0.6668.59 (Официальная сборка), (64 бит)
+    Windows 10 Pro
+  steps-to-reproduce: |
+    1. Перейти на страницу магазина - https://hexlet-products-store.vercel.app/
+    2. Нажать на лого "Hexlet Store"
+  expected-result: |
+    Пользователь должен перейти в магазин
+  actual-result: |
+    Ничего не происходит. Кнопка не активна
