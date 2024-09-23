@@ -1,7 +1,7 @@
-  ---
+---
 - summary: |
     Добавление товара в корзину
- requirement: |
+  requirement: |
     В магазине на товаре при нажатии на кнопку "В корзину" товар должен добавляться в корзину
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
