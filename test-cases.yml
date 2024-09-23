@@ -307,3 +307,63 @@
     - нажимаем на кнопку "В наличии"
   expected-result: |
     Пользователь видит только товары, которых нет в наличии
+
+  ---
+  - summary: |
+    Кнопка увеличения цены в первом инпуте с ценой
+  requirement: |
+    в Магазине в первом инпуте с ценой при нажатии на кнопку со стрелочкой вверх цена должна увеличиваться на 1
+  prerequisites: |
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/
+    - нажимаем на кнопку увеличения цены 1 раз
+  expected-result: |
+    Цена увеличивается на 1
+
+  ---
+  - summary: |
+    Кнопка уменьшения цены в первом инпуте с ценой
+  requirement: |
+    в Магазине в первом инпуте с ценой при нажатии на кнопку со стрелочкой вниз цена должна уменьшаться на 1, но не меньше 0 (т.е. не должно быть отрицательного числа)
+  prerequisites: |
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/
+    - нажимаем на кнопку уменьшения цены 1 раз
+  expected-result: |
+    Цена уменьшается на 1
+
+    ---
+  - summary: |
+    Кнопка увеличения цены во втором инпуте с ценой
+  requirement: |
+    в Магазине во втором инпуте с ценой при нажатии на кнопку со стрелочкой вверх цена должна увеличиваться на 1
+  prerequisites: |
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/
+    - нажимаем на кнопку увеличения цены 1 раз
+  expected-result: |
+    Цена увеличивается на 1
+
+  ---
+  - summary: |
+    Кнопка уменьшения цены во втором инпуте с ценой
+  requirement: |
+    в Магазине во втором инпуте с ценой при нажатии на кнопку со стрелочкой вниз цена должна уменьшаться на 1, но не меньше 0 (т.е. не должно быть отрицательного числа)
+  prerequisites: |
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    https://hexlet-products-store.vercel.app/
+  steps: |
+    - заходим на страницу https://hexlet-products-store.vercel.app/
+    - нажимаем на кнопку уменьшения цены 1 раз
+  expected-result: |
+    Цена уменьшается на 1
