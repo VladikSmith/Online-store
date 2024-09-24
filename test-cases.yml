@@ -9,7 +9,7 @@
   test-data: |
     https://hexlet-products-store.vercel.app/
     https://hexlet-products-store.vercel.app/cart
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - на товаре нажимаем кнопку "В корзину"
     - заходим на страницу https://hexlet-products-store.vercel.app/cart
@@ -25,7 +25,7 @@
     Корзина пустая
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - на товаре нажимаем кнопку "В корзину"
   expected-result: |
@@ -39,7 +39,7 @@
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - 1 раз нажимаем на товар
   expected-result: |
@@ -53,7 +53,7 @@
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - 1 раз нажимаем на кнопку "Категория"
   expected-result: |
@@ -67,7 +67,7 @@
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - 1 раз нажимаем на кнопку "Категория"
     - выбираем категорию
@@ -82,7 +82,7 @@
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - 1 раз нажимаем на кнопку выбранного производителя
   expected-result: |
@@ -96,7 +96,7 @@
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - в поле "Поиск" пишем выбранное слово
   expected-result: |
@@ -110,7 +110,7 @@
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - в поле с ценой в первом инпуте пишем определенную цену
   expected-result: |
@@ -124,7 +124,7 @@
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - в поле с ценой в первом инпуте пишем определенную цену
   expected-result: |
@@ -138,7 +138,7 @@
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - нажимаем на кнопку "Язык"
   expected-result: |
@@ -152,7 +152,7 @@
     Открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - нажимаем на кнопку "Язык"
   expected-result: |
@@ -167,7 +167,7 @@
     Добавлено 2 товара
   test-data: |
     https://hexlet-products-store.vercel.app/cart
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/cart
     - возле выбранного товара нажимаем на кнопку "Удалить"
   expected-result: |
@@ -182,7 +182,7 @@
     Добавлен 1 товар
   test-data: |
     https://hexlet-products-store.vercel.app/cart
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/cart
     - нажимаем на кнопку "Очистить корзину"
   expected-result: |
@@ -197,7 +197,7 @@
     Добавлен 1 товар
   test-data: |
     https://hexlet-products-store.vercel.app/cart
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/cart
     - нажимаем на кнопку "Оформить заказ"
   expected-result: |
@@ -212,7 +212,7 @@
   test-data: |
     https://hexlet-products-store.vercel.app/cart
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/cart
     - нажимаем на кнопку "Продолжить покупки"
   expected-result: |
@@ -227,7 +227,7 @@
     Добавлен 1 товар
   test-data: |
     https://hexlet-products-store.vercel.app/cart
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/cart
     - нажимаем на выбранный товар
   expected-result: |
@@ -241,7 +241,7 @@
     https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - нажимаем на кнопку "Следующая"
   expected-result: |
@@ -255,7 +255,7 @@
     https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - нажимаем на кнопку "Следующая"
   expected-result: |
@@ -269,7 +269,7 @@
     https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - нажимаем на кнопку "В наличии"
   expected-result: |
@@ -283,7 +283,7 @@
     https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - нажимаем на кнопку "В наличии"
   expected-result: |
@@ -297,7 +297,7 @@
     https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - нажимаем на кнопку увеличения цены 1 раз
   expected-result: |
@@ -311,7 +311,7 @@
     https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - нажимаем на кнопку уменьшения цены 1 раз
   expected-result: |
@@ -325,7 +325,7 @@
     https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - нажимаем на кнопку увеличения цены 1 раз
   expected-result: |
@@ -339,7 +339,7 @@
     https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - нажимаем на кнопку уменьшения цены 1 раз
   expected-result: |
@@ -353,7 +353,7 @@
     https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
   expected-result: |
     Должны корректно отображаться все бренды с возможностью выбора
@@ -366,7 +366,7 @@
     https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - выбираем товар
     - нажимаем хештег
@@ -381,7 +381,7 @@
     https://hexlet-products-store.vercel.app/
   test-data: |
     https://hexlet-products-store.vercel.app/
-  steps: |
+  steps:
     - заходим на страницу https://hexlet-products-store.vercel.app/
     - нажимаем лого "Hexlet Store"
   expected-result: |
