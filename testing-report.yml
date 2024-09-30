@@ -32,10 +32,6 @@
   status: fail
 
 - summary: |
-     Успешное удаление товара из корзины
-  status: fail
-
-- summary: |
      Очистка корзины
   status: fail
 
